@@ -1,3 +1,4 @@
+// New model
 const mongoose = require('mongoose');
 
 //Connect to mongoose
