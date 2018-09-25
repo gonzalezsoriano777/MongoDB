@@ -9,7 +9,7 @@ const MarioCharSchema = new Schema({
     
 });
 
-const MarioChar = mongoose.model('mariochar'.MarioCharSchema); // Everytime there is a new MarioChar Character it will be placed in this collection
+const MarioChar = mongoose.model('mariokart', MarioCharSchema); // Everytime there is a new MarioChar Character it will be placed in this collection
 
 module.exports = MarioChar;
 
