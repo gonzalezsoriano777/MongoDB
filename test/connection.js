@@ -1,4 +1,4 @@
-// New model
+//sNew model
 const mongoose = require('mongoose');
 
 // ES6 Promises
