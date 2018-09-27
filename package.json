@@ -2,9 +2,9 @@
   "name": "mongodb",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "index.js",
   "scripts": {
-    "test":"mocha" 
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
