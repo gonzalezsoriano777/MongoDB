@@ -4,7 +4,7 @@ const MarioChar = require('../models/mariokart');
 //Describes tests
 describe('Finding records', function(){
     beforeEach(function(done){
-         var char = MarioChar({
+         var char = new MarioChar({
            name: 'Mario'
        });           
         
@@ -15,9 +15,9 @@ describe('Finding records', function(){
     });
     
     // Create tests
-    it('Finds one record to the database', function(done){
+    it('Finds one record by ID from the database', function(done){
       
-      MarioChar.findOne({name: 'Mario'}).then(function(result){
+      MarioChar.findOne({_id: myChar_id}).then(function(result){
           assert(result.name === 'Mario');
           done();
       });
