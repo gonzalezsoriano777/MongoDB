@@ -1,23 +1,16 @@
-//sNew model
+
 const mongoose = require('mongoose');
 
 
-<<<<<<< HEAD
-// ES6 Promises
 
-
-// Connect to the db before tests run
-before(function(done){
-  
-
-
-// Connect to mLab now
-=======
 mongoose.Promise = global.Promise;
 
 
 before(function(done){
->>>>>>> lesson9
+  
+
+
+
 mongoose.connect('mongodb://soriano123:hector3463@ds117623.mlab.com:17623/mongo', { useNewUrlParser: true }); // made one database called 'testaroo'
 
 //element.on('click', function(){ // Once the connection is open , it opens to that function
@@ -29,8 +22,6 @@ mongoose.connection.once('open', function(){
 }).on('error', function(error){
     console.log('Connection error:', error);
 });
-<<<<<<< HEAD
-=======
 
 });
 
@@ -46,5 +37,4 @@ beforeEach(function(done){
     done();
   });
 
->>>>>>> lesson9
 });
