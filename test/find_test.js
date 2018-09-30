@@ -18,9 +18,10 @@ describe('Finding records', function(){
     });
     
     // Create tests
-    it('Finds one record from the database', function(done){
-      
-      MarioChar.findOne({name:'Mario'}).then(function(result){
+    it('Finds one record from the database', function(done){ // Create a test in which uses a string inside a function
+      // once the test has been finished the function calls for 'done'
+      MarioChar.findOne({name:'Mario'}).then(function(result){// Calls the variable of MarioChar, 
+      //uses the findOne method so that it will find its collection once it locates the name of Mario
           assert(result.name === 'Mario');
           done();
       });
@@ -30,7 +31,7 @@ describe('Finding records', function(){
     it('Finds one record by ID from the database', function(done){
       
       MarioChar.findOne({_id:char._id}).then(function(result){
-          assert(result._id.toString() === char._id.toString());
+          assert(result._id.toString() === char._id.toString()); 
           done();
       });
                       
