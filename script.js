@@ -2,11 +2,10 @@
 
 /*
 
-Focus on 3 Mongoose methods
+Various Mongoose Methods
 
-Used for deleting records
-- char.remove()
-- MarioChar.remove()
-- MarioChar.findOneAndRemove()
+- char.update()
+- MarioChar.update()
+- MarioChar.findOneAndUpdate()
 
 */
