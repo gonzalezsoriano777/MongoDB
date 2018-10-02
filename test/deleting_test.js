@@ -1,4 +1,4 @@
- const assert = require('assert');
+const assert = require('assert');
 const MarioChar = require('../models/mariokart');
 
 //Describes tests
@@ -29,6 +29,6 @@ describe('Deleting records', function(){
         // say null and remove the record from the database
         done();
       });
-    }).catch(function(err) { console.log(err)});
+    })
   });
 });
