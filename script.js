@@ -2,8 +2,8 @@
 
 /*
 
-what to focus on.. 
-store relation data by nesting documents
+No Notes used for this
+
 
 
 */

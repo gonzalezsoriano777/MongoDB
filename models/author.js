@@ -3,14 +3,14 @@ const Schema = mongoose.Schema;
 
 // Create Schema and Model
 
-const BookSchema = new Schema({
+const BookSchema = new Schema({ // makes a new schema with a title and page number
    title: String, 
    pages: Number
 });
 
 
 
-const AuthorSchema = new Schema({
+const AuthorSchema = new Schema({ // same process but for books it calls for the BookSchema
    name: String, 
    age: Number, 
    books: [BookSchema]    
