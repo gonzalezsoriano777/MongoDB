@@ -36,7 +36,7 @@ describe('Updating records', function(){
     
     it('increments the weight by 1',function(done){
       
-    MarioChar.update({}, {$inc /*this is the update operator, it's the increment*/:{ weight: 1} }).then(function(){
+    MarioChar.update({}, {$inc /*this is the update operator, it's the increment*/ :{ weight: 1} }).then(function(){
      MarioChar.findOne({name: 'Mario'}).then(function(record){
       assert(record.weight === 51);
       done();
